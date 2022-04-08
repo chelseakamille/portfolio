@@ -126,6 +126,7 @@ h1 {
     letter-spacing: 2px;
     line-height: 1;
     text-align: center;
+    text-transform: lowercase;
     padding-bottom: 42px;
 }
 
