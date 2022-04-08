@@ -59,24 +59,18 @@ header {
     user-select: none;
 }
 
-nav {
+.nav-menu {
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 2px;
-}
-
-nav ul {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 26px;
     right: 10px;
+    height: 2px;
     padding-right: 12px;
 }
 
-nav ul li {
+.nav-item {
     list-style: none;
     font-weight: 400;
     font-size: 0.9rem;
@@ -84,7 +78,7 @@ nav ul li {
     padding: 10px;
 }
 
-nav ul li a {
+.nav-item a {
     color: #000;
     text-decoration: none;
     text-align: center;
@@ -95,7 +89,7 @@ nav ul li a {
     padding: 3px;
 }
 
-nav ul li a:hover {
+.nav-item a:hover {
     background-color: #7d5a5a;
     color: #fff;
 }
