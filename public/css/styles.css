@@ -12,7 +12,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,7 +21,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: #7d5a5a;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 a {
@@ -231,7 +231,7 @@ h3 {
 h4 {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -247,7 +247,7 @@ h4 a {
 .description {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.985rem;
     color: #fff;
     text-align: center;
     width: 350px;
@@ -359,7 +359,7 @@ footer {
 .tools {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 
@@ -400,7 +400,7 @@ footer {
 }
 
 h5 {
-    width: 68%;
+    /* width: 68%; */
     font-weight: 500;
     font-style: italic;
     font-size: 3vw;
@@ -411,15 +411,16 @@ h6 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
 }
 
 .infop {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    text-align: center;
+    font-size: 0.985rem;
+    line-height: 1.5;
+    text-align: left;
     padding: 0 50px 25px 50px;
     margin-top: -5px;
     margin-bottom: 12px;
@@ -454,8 +455,8 @@ h6 {
 .infoa {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 0.985rem;
+    line-height: 1.5;
     text-align: justify;
     padding: 0 50px 10px 50px;
     margin-top: -5px;
@@ -467,6 +468,111 @@ h6 {
     width: 28vw;
     user-select: none;
     margin-bottom: 90px;
+}
+
+/* CASE STUDIES */
+
+.brief-info {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 0.985rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 50px;
+    margin-top: -25px;
+    width: 60%;
+}
+
+.c-info {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 0.985rem;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0 50px;
+    width: 52%;
+}
+
+.cases-ps {
+    padding: 40px 80px 0 80px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 120px;
+    width: 60vw;
+    margin: 120px auto -20px auto;
+    box-shadow: 8px 10px 1px #000;
+    -webkit-box-shadow: 8px 10px 1px #000;
+    -moz-box-shadow: 8px 10px 1px #000;
+}
+
+.case-info1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.case-info2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.cases-d {
+    padding: 40px 0 0 0;
+}
+
+.container-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    background-color: #faf2f2;
+}
+
+.case-photo {
+    width: 62vw;
+    user-select: none;
+    padding-bottom: 50px;
+}
+
+.case-photo2 {
+    width: 40vw;
+    user-select: none;
+    padding-bottom: 50px;
+}
+
+.c-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 50px 0;
+}
+
+.divider {
+    width: 65%;
+    padding-top: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.ouch-credit {
+    font-family: 'Lato';
+    font-size: 0.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.prototype {
+    width: 400px;
+    height: 700px;
 }
 
 /* ANIMATION */
@@ -594,8 +700,8 @@ h6 {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px) {
-    nav ul li {
-        font-size: 0.8rem;
+    .nav-item {
+        font-size: 0.9rem;
     }
 
     .logo {
@@ -619,6 +725,25 @@ h6 {
     h5 {
         font-size: 2rem;
     }
+
+    .wireframes,
+    .case-photo {
+        width: 69vw;
+    }
+
+    .case-photo2 {
+        width: 36vw;
+    }
+
+    .case-info1,
+    .case-info2 {
+        flex-direction: column;
+    }
+
+    .ouch-credit {
+        font-size: 0.7rem;
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -630,8 +755,8 @@ h6 {
 }
 
 @media only screen and (max-width: 550px) {
-    nav ul li {
-        font-size: 0.7rem;
+    .nav-item {
+        font-size: 0.8rem;
     }
 
     .logo {
@@ -644,11 +769,12 @@ h6 {
     }
 
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .exclamation {
-        width: 10px;
+        width: 15px;
+        padding-left: 3px;
     }
 
     .one,
@@ -658,15 +784,23 @@ h6 {
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     h3 {
         font-size: 2.2rem;
     }
 
+    h4 {
+        font-size: 1rem;
+    }
+
+    .samples {
+        width: 350px;
+    }
+
     .description {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .wave svg {
@@ -682,11 +816,11 @@ h6 {
     }
 
     .extra {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .socials {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .credit {
@@ -694,19 +828,69 @@ h6 {
     }
 
     .infop,
-    .infoa {
-        font-size: 0.8rem;
+    .infoa,
+    .briefinfo {
+        font-size: 0.925rem;
         padding: 10px 10px 5px 10px;
         width: 75%;
     }
 
+    .role,
+    .tools {
+        font-size: 0.9rem;
+    }
+
     h5 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
+    }
+
+    h6 {
+        font-size: 1rem;
     }
 
     .tab,
     .tab2,
     .tab3 {
         width: 180px;
+    }
+
+    .wireframes,
+    .case-photo {
+        width: 82vw;
+    }
+
+    .case-photo2 {
+        width: 60vw;
+    }
+
+    .p1design {
+        width: 300px;
+    }
+
+    .case-info1,
+    .case-info2 {
+        flex-direction: column;
+    }
+
+    .c-info {
+        width: 90%;
+    }
+
+    .cases-ps {
+        width: 45vw;
+    }
+
+    .divider {
+        width: 80%;
+    }
+
+    .ouch-credit {
+        font-size: 0.5rem;
+        width: 70%;
+    }
+
+    .prototype {
+        width: 250px;
+        height: 500px;
     }
 }
